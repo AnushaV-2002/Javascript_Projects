@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3DB2FF;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:10em;
+    align-items: center;
+    justify-items: center;
+}
+.container .hex_code{
+    color:white;
+    align-self:end;
+    display:flex;
+    flex-direction: column;
+}
+.container .hex_code label{
+    text-align: center;
+    margin:0.5em;
+    font-size:25px;
+    font-weight: 800;
+}
+.container .hex_code input{
+    background-color:#3DB2FF ;
+    text-align: center;
+    color:white;
+   font-size: 18px;
+    border:none;
+    outline:none;
+    border-bottom:1px solid WHITE;
+}
+button{
+    padding:15px;
+    background-color: #FFB830;
+    border:1px solid black;
+    border-radius: 0.5em;
+    transition:1s;
+   cursor:pointer;
+}
+button:hover{
+    transform: scale(1.2);
+}
+@media all and (max-width:780px){
+    .container .hex_code label{
+        font-size: 1.5em;
+        text-align: center;
+    }
+   
+}
